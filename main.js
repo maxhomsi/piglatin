@@ -1,8 +1,8 @@
 let button = document.getElementById('botao') //pegou o id do botao
 let input = document.getElementById('texto') //pegou id da caixa de texto
 
-button.addEventListener('click', function(){ //pouco confuso aqui tb
-   let result = document.getElementById('resultado')
+button.addEventListener('click',  function(){ //pouco confuso aqui tb
+   let result = document.getElementById('resultado') //perguntar como enviar o formulario apertando enter
    let text = input.value;
    input.value = '';
 
