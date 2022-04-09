@@ -7,6 +7,16 @@ button.addEventListener('click',  function(){ //pouco confuso aqui tb
    input.value = '';
 
 
+
+   //https://www.codegrepper.com/code-examples/javascript/how+to+play+audio+onclick+in+html
+   //tutorial how to put sound on click.
+   //check with teacher the command
+   
+   let sound = new Audio("pig.mp3"); 
+   button.addEventListener('click',()=>{
+       sound.currentTime = 0.3;
+       sound.play();
+   });
    //codigo do projeto inicial.
    const pigLatin = (word) => {
     let acertar = word.toLowerCase().trim();
