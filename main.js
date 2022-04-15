@@ -103,9 +103,10 @@ let macaco = function(){
 
 }
 input.addEventListener('keyup', function(e){
+  if (e.keyCode == 13){
   sound.currentTime = 0;
       sound.play()
-  if (e.keyCode == 13){
+  
     macaco()
   }  
 })
