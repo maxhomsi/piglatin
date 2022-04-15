@@ -16,11 +16,7 @@ let macaco = function(){
   //tutorial how to put sound on click.
   //check with teacher the command
 
-  let sound = new Audio("pig.mp3"); 
-  button.addEventListener('click',()=>{
-      sound.currentTime = 0;
-      sound.play();
-  });
+  
   //codigo do projeto inicial.
   const pigLatin = (word) => {
    let acertar = word.toLowerCase().trim();
@@ -107,12 +103,16 @@ let macaco = function(){
 
 }
 input.addEventListener('keyup', function(e){
+  sound.currentTime = 0;
+      sound.play()
   if (e.keyCode == 13){
-    sound.currentTime = 0.3;
-      sound.play();
     macaco()
-    
   }  
 })
 
 button.addEventListener('click', macaco)
+let sound = new Audio("pig.mp3"); 
+  button.addEventListener('click',()=>{
+      sound.currentTime = 0;
+      sound.play();
+  });
