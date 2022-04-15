@@ -18,7 +18,7 @@ let macaco = function(){
 
   let sound = new Audio("pig.mp3"); 
   button.addEventListener('click',()=>{
-      sound.currentTime = 0.3;
+      sound.currentTime = 0;
       sound.play();
   });
   //codigo do projeto inicial.
@@ -108,7 +108,10 @@ let macaco = function(){
 }
 input.addEventListener('keyup', function(e){
   if (e.keyCode == 13){
+    sound.currentTime = 0.3;
+      sound.play();
     macaco()
+    
   }  
 })
 
